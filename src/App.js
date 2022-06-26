@@ -4,12 +4,17 @@ import Home from './components/Home';
 import Search from './components/Search';
 import Random from './components/Random';
 import Contact from './components/Contact';
+import Header from './components/Header';
   
 //import './style.css';
   
 export default function App() {
   return (
-    <Router>
+    <div>
+      <div>
+        <Header />
+      </div>
+      <Router>
       <div>
         <nav>
           <ul>            
@@ -35,5 +40,6 @@ export default function App() {
         </Routes>
       </div>
     </Router>
+  </div>
   );
 }
